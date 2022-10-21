@@ -8,24 +8,22 @@
 * Return: largest number
 */
 
-int main(void)
-{
 int largest_number(int a, int b, int c)
 {
-int largest = 0;
+int largest;
 
-if (a > largest)
+if (a >= b && a >= c)
 {
 largest = a;
 }
-else if (b > largest)
+else if (b >= a && b >= c)
 {
-largest = a;
+largest = b;
 }
 else
 {
-largest = a;
+largest = c;
 }
 
 return (largest);
-}}
+}
